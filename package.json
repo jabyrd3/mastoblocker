@@ -1,0 +1,16 @@
+{
+  "name": "blickchorn",
+  "version": "1.0.0",
+  "description": "parses the blocklist for the parts of masto that aren't shitty and makes api requests to an instance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mastodon": "^1.2.2",
+    "nightmare": "^3.0.1",
+    "request": "^2.88.0"
+  }
+}
