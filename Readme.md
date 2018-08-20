@@ -8,6 +8,7 @@ I know this is a terrible way to do it. I don't like it any more than you do. Un
 - npm
 
 # Installation
+- IF YOU'RE RUNNING IN A HEADLESS ENVIRONMENT, YOU NEED TO GO HERE AND INSTALL THE DEPENDENCIES LISTED [here](https://electronjs.org/docs/development/build-instructions-linux).
 - clone this repo
 - `cd mastoblock && npm install`
 - `MASTO_EMAIL=<admin or mod user> MASTO_PASSWORD=<your masto password> MASTO_URL=<your instances url including https:// and no trailing slash> node index.js`
@@ -17,3 +18,6 @@ It will take a while. I had to do this in the *silliest* way possible because of
 The script notices domain blocks you already have and doesn't try to re-add them, so it won't mess with any existing domain blocks. If it fails or errors because of a network timeout or something, it is safe to run again.
 
 Good luck and don't be afraid to DM me if something goes sideways, i'm happy to help debug. get me @jabyrd3@masto.dev.host if you got a problem, or you can file an issue or PR.
+
+# Maintenance
+Honestly, i reccomend putting this on a cronjob so it'll run in the background every so often. On my server I've got it running every week to make sure that new additions are blocked automatically if I'm not able to pay close enough attention.
